@@ -16,6 +16,8 @@ class UsersController extends AppController {
     public function register() {
         if ($this->request->is('post')) {
             $this->User->create();
+            print_r($this->request->data);
+            exit;
             if ($this->User->save($this->request->data)) {
                 $this->Session->setFlash('Registration has been completed. Please login.');
                 return $this->redirect('/');

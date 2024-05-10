@@ -12,4 +12,3 @@
 </ul>
 <?php echo $this->Html->link('Add', array('controller' => 'messages', 'action' => 'add', $user['User']['id'])); ?><br><br>
 <?php echo $this->Html->link('Back', array('controller' => 'users', 'action' => 'profile', $user['User']['id'])); ?><br><br>
-<?php echo $this->Html->link('Logout', array('action' => 'logout')); ?>
